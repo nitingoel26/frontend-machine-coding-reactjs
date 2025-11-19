@@ -1,0 +1,11 @@
+img {
+  height: 450px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

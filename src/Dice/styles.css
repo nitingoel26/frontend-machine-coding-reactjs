@@ -1,0 +1,97 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer {
+  margin-top: 16px;
+  min-width: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 16px;
+  gap: 8px;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+.dice {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 8px;
+  position: relative;
+  padding: 4px;
+}
+
+.dice-item {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+.dice-item-top-left {
+  top: 8px;
+  left: 8px;
+}
+
+.dice-item-top-center {
+  top: 8px;
+  left: 50%;
+}
+
+.dice-item-top-right {
+  top: 8px;
+  right: 8px;
+}
+
+.dice-item-center-left {
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+
+.dice-item-center-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dice-item-center-right {
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}
+
+.dice-item-bottom-left {
+  bottom: 8px;
+  left: 8px;
+}
+
+.dice-item-bottom-center {
+  bottom: 8px;
+  left: 50%;
+}
+
+.dice-item-bottom-right {
+  bottom: 8px;
+  right: 8px;
+}
