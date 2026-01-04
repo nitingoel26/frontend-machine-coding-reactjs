@@ -33,7 +33,10 @@ const AutocompleteComponent = () => {
     enhancedFunction(keyword);
   }, [keyword]);
 
-  const debounceFunction = (func: Function, delay = 500) => {
+  const debounceFunction = <T extends (args: any[]) => void>(
+    func: T,
+    delay = 500
+  ) => {
     let timerId: ReturnType<typeof setTimeout>;
     return function (...args) {
       if (timerId) clearTimeout(timerId);

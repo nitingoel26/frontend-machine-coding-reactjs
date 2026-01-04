@@ -11,6 +11,10 @@ const ProgressComponent = ({ completion = 0 }: { completion: number }) => {
         style={{
           width: `${value}%`,
         }}
+        role="progressbar"
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-valuenow={completion}
       ></div>
       <span>{value}%</span>
     </div>
